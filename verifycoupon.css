@@ -1,0 +1,23 @@
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    border-radius: 36px;
+    background: linear-gradient(145deg, #13c480, #0aa571);
+    box-shadow:  25px 25px 37px #727272, -25px -25px 37px #ffffff;
+}
+
+

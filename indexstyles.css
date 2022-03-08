@@ -1,0 +1,301 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+    
+}
+
+body
+{
+    background-color: #e2e6e8;
+}
+
+
+.container{
+ 
+}
+
+.row{
+    width: ;
+    margin:0%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.main{
+    margin: auto;
+    margin-top: 20px;
+    margin-right: 0%;
+    margin-left: auto;
+    min-height: 300px;
+    align-items: right;
+    border-radius: 0px;
+    background-image: url('mathieu-stern-1fzyz-bmKBw-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: ;
+    background-size: cover;
+    
+    
+    
+}
+
+.col1{
+    margin: 3px;
+    margin-top: 10px;
+    min-height: 300px;
+    text-align: center;
+    background: linear-gradient(145deg, #388cda, #2ef7aa);
+    
+}
+.col2{
+    margin: 3px;
+    margin-top: 10px;
+    min-height: 300px;
+    text-align: center;
+    background: linear-gradient(145deg, #388cda, #2ef7aa);
+    
+}
+.col3{
+    margin: 3px;
+    margin-top: 10px;
+    min-height: 300px;
+    text-align: center;
+    background: linear-gradient(145deg, #388cda, #2ef7aa);
+    
+}
+.col4{
+    margin: ;
+    margin-top: 10px;
+    min-height: 300px;
+    text-align: center;
+    background: linear-gradient(145deg, #388cda, #2ef7aa);
+  
+    
+}
+
+ion-icon{
+    font-size: 2.5em;
+    color: blueviolet;
+}
+
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+h2{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: ;
+}
+
+p{
+    font-size: 21px;
+    font-weight: 500;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    width: auto;
+}
+
+.social{
+    padding: 0;
+}
+
+.h3{
+    padding: 15px 0px;
+}
+
+.social li{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    padding: 0cm;
+}
+
+.social li a i{
+    padding-top: 4px;
+    color: #333;
+    transition: .3s;
+    font-size: 25px;
+}
+
+.social li a i:hover{
+    color: blue;
+    text-decoration: none;
+}
+
+.footer .links ul{
+    list-style-type: none;
+}
+
+.footer .links li a {
+    color: #fff;
+    transition: color 0.2s;
+}
+
+.footer .links li a:hover{
+    text-decoration: none;
+    color:
+}
+
+li{
+    text-decoration: none;
+}
+
+#footerh1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;   
+
+}
+
+.icon .ion-icon{
+    font-size: 5.5em;
+    
+}
+
+
+
+
+/* footer area */
+
+a {
+	color: ;
+}
+
+a {
+	transition: color, background-color, opacity;
+	transition-duration: .2s
+}
+
+a, a:hover {
+	text-decoration: none
+}
+
+::-moz-selection {
+	color: #fff;
+	background:
+}
+
+::selection {
+	color: #fff;
+	background: 
+}
+
+img {
+	max-width: 100%
+}
+
+/* SLANTED AREA */
+
+.bottom-contain {
+	background: #fff;
+	padding-top: 140px;
+	overflow: hidden
+}
+
+.newsletter {
+	-webkit-transform: rotate(-1.5deg);
+	-moz-transform: rotate(-1.5deg);
+	-o-transform: rotate(-1.5deg);
+	-ms-transform: rotate(-1.5deg);
+	transform: rotate(-1.5deg);
+	background: #e2e6e8;
+	color: #000;
+	padding: 50px 0 150px 0;
+	text-align: center;
+	margin: -100px -50px 0 -50px
+}
+
+.newsletter-inner {
+	margin: 0 50px;
+	-webkit-transform: rotate(1.5deg);
+	-moz-transform: rotate(1.5deg);
+	-o-transform: rotate(1.5deg);
+	-ms-transform: rotate(1.5deg);
+	transform: rotate(1.5deg)
+}
+
+.site-footer-container {
+	background: #13c480;
+}
+
+.site-footer {
+	background: linear-gradient(145deg, #388cda, #2ef7aa);
+	-webkit-transform: rotate(1.5deg);
+	-moz-transform: rotate(1.5deg);
+	-o-transform: rotate(1.5deg);
+	-ms-transform: rotate(1.5deg);
+	transform: rotate(1.5deg);
+	margin: -70px -50px 0 -50px;
+	color: #000;
+	padding: 35px 0 25px;
+	text-align: center
+}
+
+.site-footer-inner {
+	margin: 0 50px;
+	-webkit-transform: rotate(-1.5deg);
+	-moz-transform: rotate(-1.5deg);
+	-o-transform: rotate(-1.5deg);
+	-ms-transform: rotate(-1.5deg);
+	transform: rotate(-1.5deg)
+}
+
+.site-footer h3 {
+	font-size: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 0 40px
+}
+
+
+
+.site-footer a {
+	color: #000
+}
+.site-footer a:hover {
+	color: #e2e6e8
+}
+
+.btn1 {
+	background: #388cda;
+	color: #fff;
+	display: inline-block;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	font-style: italic;
+	padding: 12px 20px;
+	text-transform: uppercase
+}
+.btn:hover {
+	background: #fff;
+	color: #141413;
+}
+
+
+}
+}
+.btn-inverse {
+	background: #111215;
+	color: #fff
+}
+
+
+/* end of footer */
+
+li{
+    text-decoration: none;
+}
