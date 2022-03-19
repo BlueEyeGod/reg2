@@ -1,4 +1,5 @@
 <?php 
+include('server.php') 
  // session_start(); 
 
   ///if (!isset($_SESSION['username'])) {
@@ -9,9 +10,8 @@
   //	session_destroy();
   //	unset($_SESSION['username']);
   //	header("location: index.php");
-  }
-  include('server.php'); 
 ?>
+
 <!DOCTYPE html> 
 <head>
     <!-- Required meta tags -->
@@ -27,8 +27,6 @@
 </head>
 
 <body>
-
-
 
     <div class="content">
        
@@ -145,17 +143,6 @@
 
         ?>
 
-
-
-
-
-
-
-
-
-
-
-
         <div class="bottom-contain">
             <section class="newsletter">
                 <div class="newsletter-inner">
@@ -199,7 +186,7 @@
 
 
 
-        <?php endif ?>
+        <?php ?>
     </div>
 
 
