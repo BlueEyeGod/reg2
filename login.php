@@ -1,27 +1,28 @@
 <?php 
-if(isset($_POST['login']))
-{
-$email=$_POST['email'];
-$password=md5($_POST['password']);
-$sql ="SELECT Password,Username FROM users WHERE Username=:username and Password=:password";
-$query= $dbh -> prepare($sql);
-$query-> bindParam(':username', $username, PDO::PARAM_STR);
-$query-> bindParam(':password', $password, PDO::PARAM_STR);
-$query-> execute();
-$results=$query->fetchAll(PDO::FETCH_OBJ);
-if($query->rowCount() > 0)
-{
-$_SESSION['login']=$_POST['email'];
-$_SESSION['fullname']=$results->FullName;
-$currentpage=$_SERVER['index1.php'];
-echo "<script type='text/javascript'> document.location = '$currentpage'; </script>";
-} else{
+include('functions.php')
+// if(isset($_POST['login']))
+// {
+// $email=$_POST['email'];
+// $password=md5($_POST['password']);
+// $sql ="SELECT Password,Username FROM users WHERE Username=:username and Password=:password";
+// $query= $dbh -> prepare($sql);
+// $query-> bindParam(':username', $username, PDO::PARAM_STR);
+// $query-> bindParam(':password', $password, PDO::PARAM_STR);
+// $query-> execute();
+// $results=$query->fetchAll(PDO::FETCH_OBJ);
+// if($query->rowCount() > 0)
+// {
+// $_SESSION['login']=$_POST['email'];
+// $_SESSION['fullname']=$results->FullName;
+// $currentpage=$_SERVER['index1.php'];
+// echo "<script type='text/javascript'> document.location = '$currentpage'; </script>";
+// } else{
   
-  echo "<script>alert('Invalid Details');</script>";
+//   echo "<script>alert('Invalid Details');</script>";
 
-}
+// }
 
-}
+// }
 
 ?>
 
@@ -47,6 +48,7 @@ echo "<script type='text/javascript'> document.location = '$currentpage'; </scri
 
 	 
   <form method="post" action="login.php">
+    <?php echo display_error(); ?>
   	
 	  <div class="container">
             <div class="mb-5" id="signup">
