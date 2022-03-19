@@ -1,6 +1,5 @@
 <?php 
-  session_start(); 
-
+  session_start();
   if (!isset($_SESSION['username'])) {
   	$_SESSION['msg'] = "You must log in first";
   	header('location: index.php');
@@ -152,31 +151,44 @@
 
 
         <div class="bottom-contain">
-            <section class="newsletter">
-                <div class="newsletter-inner">
-                    <div class="container">
-                        <h3>Follow us on facebook</h3>
-                        <a href="#" class="btn1 btn-inverse">Follow</a>
-                    </div>
-                </div>
-            </section>
-            <div class="site-footer-container">
-                <footer class="site-footer">
-                    <div class="site-footer-inner">
+                <section class="newsletter">
+                    <div class="newsletter-inner">
                         <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h3>Cashclick</h3>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3>Footer Right</h3>
+                            <h3>Follow us on facebook</h3>
+                            <a href="https://www.facebook.com/Cashclip-100114982615485/"
+                                class="btn1 btn-inverse">Follow</a>
+                        </div>
+                    </div>
+                </section>
+                <div class="site-footer-container">
+                    <footer class="site-footer">
+                        <div class="site-footer-inner">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+
+                                        <p class="pr 2 text white 2">
+                                            Cashclip #1 Affiliate Marketing Website. Earn money while doing your daily
+                                            jobs
+                                        </p>
+                                        
+                                    </div>
+                                    <div class="col-lg-3 col-xs-12 links">
+                                        <h3 class="mt-lg-0 mt-sm-3">Contacts</h3>
+                                        <ul>
+                                            <li>Cashclip.com.ng</li>
+                                            <li>Cashclippreview@gmail.com</li>
+                                        </ul>
+                                    </div>
+                                    <div class="copyright">
+                                        &copy; Copyright <strong><span>Cashclip</span></strong>. All Rights Reserved
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </footer>
+                    </footer>
+                </div>
             </div>
-        </div>
 
         <?php endif ?>
     </div>

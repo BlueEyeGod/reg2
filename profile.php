@@ -24,7 +24,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="profile.css">
 
     <title>Profile</title>
 </head>
@@ -101,43 +101,42 @@
             </div>
         </nav>
 
-        <div class="">
-
-            <div class="row">
-
-                <div class="col-md-12">
-                    <div class="main"></div>
-                </div>
-                <div class="col-md-4">
-                    <div class="col1"></div>
-                </div>
-                <div class="col-md-4">
-                    <div class="col2"></div>
-                </div>
-                <div class="col-md-4">
-                    <div class="col3"></div>
-                </div>
-                <div class="col-md-12">
-                    <div class="col4">
-                    </div>
+        <div class="container">
+        <input type="text" placeholder="Full Name" class="form-control mb-3" name="fullname">
 
 
-                </div>
+                <input type="tel" placeholder="phone number" class="form-control mb-3" name="phone">
 
-            </div>
+                <input type="text" placeholder="Username" class="form-control mb-3" name="username">
+
+                <input type="text" placeholder="Email" class="form-control mb-3" name="email">
+
+                <input type="text" placeholder="Bank Name" class="form-control mb-3" name="bank name" >
+
+                <input type="tel" placeholder="Account Number" class="form-control mb-3" name="account number">
+
+                <input type="text" placeholder="Account Name" class="form-control mb-3" name="acount name">
+
+                <input type="text" placeholder="Facebook" class="form-control mb-3" name="facebook">
+
+                <button type="submit" class="btn btn-primary" name="save">Save</button>
 
 
 
-            <div class="bottom-contain">
+        </div>
+
+
+
+        <div class="bottom-contain">
                 <section class="newsletter">
                     <div class="newsletter-inner">
                         <div class="container">
                             <h3>Follow us on facebook</h3>
-                            <a href="#" class="btn1 btn-inverse">Follow</a>
+                            <a href="https://www.facebook.com/Cashclip-100114982615485/"
+                                class="btn1 btn-inverse">Follow</a>
                         </div>
                     </div>
                 </section>
-                <div class="site-footer-container">
                 <div class="site-footer-container">
                     <footer class="site-footer">
                         <div class="site-footer-inner">
@@ -149,7 +148,7 @@
                                             Cashclip #1 Affiliate Marketing Website. Earn money while doing your daily
                                             jobs
                                         </p>
-                                       
+                                        
                                     </div>
                                     <div class="col-lg-3 col-xs-12 links">
                                         <h3 class="mt-lg-0 mt-sm-3">Contacts</h3>
@@ -167,7 +166,6 @@
                     </footer>
                 </div>
             </div>
-
 
 
             <?php endif ?>

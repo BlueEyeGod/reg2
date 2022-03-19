@@ -11,21 +11,9 @@
 
 
 .container{
-    
+    padding: 30px;
+    margin: 30px;
 }
-
-input{
-	height: 100px;
-	width: 400px;
-	align-items: center;
-	justify-content: center;
-}
-
-.btn{
-	display: inline-block;
-	margin: 3px;	
-}
-
 
 .row{
     width: auto;

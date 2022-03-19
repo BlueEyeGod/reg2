@@ -46,6 +46,10 @@
 
             <!-- logged in user information -->
             <?php  if (isset($_SESSION['username'])) : ?>
+            
+                
+
+                
 
             <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #13c480">
                 <div class="container-fluid">
@@ -79,6 +83,12 @@
                                 <a class="nav-link" href="How it works.php">About</a>
                             </li>
 
+                            <!--</?php if (isAdmin($_SESSION['success'])) : ?>
+                            <li class="nav-item">
+                                <a class="nav-link" href="adminpanel.php">Admin Panel</a>
+                            </li>
+                            </?php endif; ?>-->
+
                         </ul>
                     </div>
                     <form class="d-flex">
@@ -91,7 +101,7 @@
                             <li class="nav-item">
                             <li class="nav-item">
                                 <a href="index.php?logout='1'" class="btn btn-primary" role="button"
-                                    style="color: white;">logout</a>
+                                    >Log Out</a>
                             </li>
                             </li>
 
@@ -99,6 +109,7 @@
                     </form>
                 </div>
             </nav>
+            
             <div class="e">
 
                 <div class="row">

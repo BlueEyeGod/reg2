@@ -1,5 +1,17 @@
 <?php 
-  
+
+include('server.php'); 
+  //session_start(); 
+
+  //if (!isset($_SESSION['username'])) {
+ // 	$_SESSION['msg'] = "You must log in first";
+  //	header('location: index.php');
+  //}
+  //if (isset($_GET['logout'])) {
+ // 	session_destroy();
+ // 	unset($_SESSION['username']);
+ /// 	header("location: index.php");
+ /// }
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,17 +29,17 @@
     <title>Home</title>
 </head>
 
-<body>
-
     <body>
 
-        
+    
 
-
+        <div class="content">
+            <!-- notification message -->
+          
             <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #13c480">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="Index.php"><img src="Cashclip1.png"></a>
+                        <a class="navbar-brand" href="Index1.php"><img src="Cashclip1.png"></a>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -37,34 +49,34 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="Index.php">Home</a>
+                                <a class="nav-link" aria-current="page" href="adminpanel.php">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Userinfo.php">Users Info</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="approve.php">Verify Users</a>
                             </li>
                             
-                            <li class="nav-item">
-                                <a class="nav-link" href="getcoupon1.php">Get Coupon Code</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="How it works1.php">About</a>
-                            </li>
 
                         </ul>
                     </div>
                     <form class="d-flex">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <li class="nav-item">
-                <a href="register.php" class="btn btn-success" role="button">SignUp</a>
-              </li>
-            </li>
-            <li class="nav-item">
-              <li class="nav-item">
-                <a href="login.php" class="btn btn-primary" role="button">Login</a>
-              </li>
-            </li>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <li class="nav-item">
+          
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                            <li class="nav-item">
+                                <a href="index.php?logout='1'" class="btn btn-primary" role="button"
+                                    style="color: white;">logout</a>
+                            </li>
+                            </li>
 
-          </ul>
-        </form>
+                        </ul>
+                    </form>
                 </div>
             </nav>
             <div class="e">
@@ -74,9 +86,7 @@
                     <div class="col-md-12">
                         <div class="main">
                             <h1>WELCOME TO CASHCLIP</h1>
-                            <P>WITH AMAZING OPTIONS AND OFFERS YOU STAND TO GAIN FINANCIAL
-                                FREEDOM, FOR JUST A REGISTRATION FEE OF NGN1500, YOU GET ACCESS TO
-                                AMAZING OFFERS</P>
+                            <h2> Welcome admin</h2>
 
                         </div>
                     </div>
@@ -127,16 +137,6 @@
                         </div>
                     </div>
                 </section>
-                <div class="bottom-contain">
-                <section class="newsletter">
-                    <div class="newsletter-inner">
-                        <div class="container">
-                            <h3>Follow us on facebook</h3>
-                            <a href="https://www.facebook.com/Cashclip-100114982615485/"
-                                class="btn1 btn-inverse">Follow</a>
-                        </div>
-                    </div>
-                </section>
                 <div class="site-footer-container">
                     <footer class="site-footer">
                         <div class="site-footer-inner">
@@ -171,7 +171,8 @@
 
 
 
-           
+          
+        </div>
 
 
         <!-- Bootstrap Bundle with Popper -->

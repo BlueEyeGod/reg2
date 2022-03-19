@@ -1,4 +1,10 @@
-<?php include('server.php') ?>
+<?php 
+
+include('server.php'); 
+
+
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -31,24 +37,24 @@
 
 
                 <input type="text" placeholder="Full Name" class="form-control mb-3" name="fullname"
-                    value="<?php echo $fullname; ?>" required>
+                    value="<?php echo $fullname; ?>">
 
 
                 <input type="tel" placeholder="phone number" class="form-control mb-3" name="phone"
-                    value="<?php echo $phone; ?>" required>
+                    value="<?php echo $phone; ?>">
 
                 <input type="text" placeholder="Username" class="form-control mb-3" name="username"
-                    value="<?php echo $username; ?>" required>
+                    value="<?php echo $username; ?>">
 
                 <input type="text" placeholder="Email" class="form-control mb-3" name="email"
-                    value="<?php echo $email; ?>" required>
+                    value="<?php echo $email; ?>">
 
-                <input type="password" placeholder="Password" class="form-control mb-3" name="password_1" required>
+                <input type="password" placeholder="Password" class="form-control mb-3" name="password_1">
 
-                <input type="password" placeholder="Re Type Password" class="form-control mb-3" name="password_2" required>
+                <input type="password" placeholder="Re Type Password" class="form-control mb-3" name="password_2">
 
                 <input type="text" placeholder="Coupon" class="form-control mb-3" name="coupon"
-                    value="<?php echo $coupon; ?>" required>
+                    value="<?php echo $coupon; ?>" >
 
                 <input type="text" placeholder="Referral" class="form-control mb-3" name="refer"
                     value="<?php echo $refer; ?>">
@@ -58,6 +64,7 @@
                 <p>
                     Already a member? <a href="login.php">Sign in</a>
                 </p>
+                <?php include('errors.php'); ?>
             </div>
         </div>
         </div>

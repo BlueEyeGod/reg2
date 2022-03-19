@@ -13,57 +13,15 @@
   <body>
     <div class="container">
     <div class="mb-5">
-        <h3 class="mb-3"> Verify Coupon</h3>
-            <input type="text" placeholder="Verify Coupon" id="VeerifyCouInp" class="form-control mb-3">
-            <button type="button" id="sub_btn" class="btn btn-primary">Verify</button>
+        <h2 class="mb-3"> Your account is now pending for approval!!</h2>
+        <h3 class="mb-3"> Contact admin below</h3>
+       <button type="button" id="sub_btn" class="btn btn-danger"><a href="getcoupon.php">Admins</a></button>
             
     </div>
     </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-   <!-- <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js";
-      
-      const firebaseConfig = {
-        apiKey: "AIzaSyDt09Fre1LUbjlCXIfi4pIS1RROy4a0hZU",
-        authDomain: "cash-clip-a256e.firebaseapp.com",
-        databaseURL: "https://cash-clip-a256e-default-rtdb.firebaseio.com",
-        projectId: "cash-clip-a256e",
-        storageBucket: "cash-clip-a256e.appspot.com",
-        messagingSenderId: "593297791024",
-        appId: "1:593297791024:web:cc4f2644edf28aa82075f5",
-        measurementId: "G-MHNZWGZC4C"
-      };
-    
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      
-      import  { getDatabase, ref, set, child, get }
-        from "http"
-    </script>
 
 
 
