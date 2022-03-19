@@ -1,6 +1,41 @@
 <?php 
+$errors = array(); 
+//error_reporting(0);
+if(isset($_POST['signup']))
+{
+$fullname=$_POST['fullname'];
+$email=$_POST['email']; 
+$phone=$_POST['phone'];
+$username=$_POST['username'];
+$coupon=$_POST['coupon'];
+$referer=$_POST['referer'];
+$password1=md5($_POST['password_1']); 
+$password2=md5($_POST['password_2']);
+  if ($password1 != $password2) {
+	array_push($errors, "The two passwords do not match");
+  }
+$sql="INSERT INTO  users(FullName,EmailId,ContactNo,Username,Coupon,Password,Refer) VALUES(:fullname,:email,:phone,:username,:coupon,:password_1,:referer,)";
+$query = $dbh->prepare($sql);
+$query->bindParam(':fullname',$fullname,PDO::PARAM_STR);
+$query->bindParam(':email',$email,PDO::PARAM_STR);
+$query->bindParam(':phone',$phone,PDO::PARAM_STR);
+$query->bindParam(':username',$username,PDO::PARAM_STR);
+$query->bindParam(':coupon',$coupon,PDO::PARAM_STR);
+$query->bindParam(':password_1',$password,PDO::PARAM_STR);
+$query->bindParam(':referer',$referer,PDO::PARAM_STR);
+$query->execute();
+$lastInsertId = $dbh->lastInsertId();
+if($lastInsertId)
+{
+echo "<script>alert('Registration successfull. Now you can login');</script>";
+}
+else 
+{
+echo "<script>alert('Something went wrong. Please try again');</script>";
+}
+}
 
-include('server.php'); 
+?>
 
 
 
