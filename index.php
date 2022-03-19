@@ -117,14 +117,7 @@
 
             </div>
 
-            <div class="bottom-contain">
-                <section class="newsletter">
-                    <div class="newsletter-inner">
-                        <div class="container">
-                            <h3>Follow us on facebook</h3>
-                            <a href="https://www.facebook.com/Cashclip-100114982615485/"
-                                class="btn1 btn-inverse">Follow</a>
-                        </div>
+            
                     </div>
                 </section>
                 <div class="bottom-contain">
