@@ -1,10 +1,7 @@
 <?php 
-
-include('server.php'); 
-
-
-
+    include('server.php');
 ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -27,7 +24,7 @@ include('server.php');
 
 
     <form method="post" action="register.php">
-
+    <?php echo display_error(); ?>  
         <div class="container">
             <div class="mb-5">
 

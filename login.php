@@ -1,6 +1,31 @@
-<?php include('server.php')
+<?php 
+include('functions.php')
+// if(isset($_POST['login']))
+// {
+// $email=$_POST['email'];
+// $password=md5($_POST['password']);
+// $sql ="SELECT Password,Username FROM users WHERE Username=:username and Password=:password";
+// $query= $dbh -> prepare($sql);
+// $query-> bindParam(':username', $username, PDO::PARAM_STR);
+// $query-> bindParam(':password', $password, PDO::PARAM_STR);
+// $query-> execute();
+// $results=$query->fetchAll(PDO::FETCH_OBJ);
+// if($query->rowCount() > 0)
+// {
+// $_SESSION['login']=$_POST['email'];
+// $_SESSION['fullname']=$results->FullName;
+// $currentpage=$_SERVER['index1.php'];
+// echo "<script type='text/javascript'> document.location = '$currentpage'; </script>";
+// } else{
+  
+//   echo "<script>alert('Invalid Details');</script>";
+
+// }
+
+// }
 
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,6 +48,7 @@
 
 	 
   <form method="post" action="login.php">
+    <?php echo display_error(); ?>
   	
 	  <div class="container">
             <div class="mb-5" id="signup">
@@ -41,36 +67,36 @@
     </form>
  
 
-    <?php
+    <!-- <?php
 
     // LOGIN USER
-    if (isset($_POST['login_user'])) {
-      session_start();
-      $username = mysqli_real_escape_string($db, $_POST['username']);
-      $password = mysqli_real_escape_string($db, $_POST['password']);
+    // if (isset($_POST['login_user'])) {
+    //   session_start();
+    //   $username = mysqli_real_escape_string($db, $_POST['username']);
+    //   $password = mysqli_real_escape_string($db, $_POST['password']);
     
-      if (empty($username)) {
-          array_push($errors, "Username is required");
-      }
-      if (empty($password)) {
-          array_push($errors, "Password is required");
-      }
+    //   if (empty($username)) {
+    //       array_push($errors, "Username is required");
+    //   }
+    //   if (empty($password)) {
+    //       array_push($errors, "Password is required");
+    //   }
     
-      if (count($errors) == 0) {
-          $password = md5($password);
-          $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
-          $results = mysqli_query($db, $query);
-          if (mysqli_num_rows($results) == 1) {
-            $_SESSION['username'] = $username;
-            $_SESSION['success'] = "You are now logged in";
-            header('location: index1.php');
-          }else {
-              array_push($errors, "Wrong username/password combination");
-          }
-      }
-    }
+    //   if (count($errors) == 0) {
+    //       $password = md5($password);
+    //       $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+    //       $results = mysqli_query($db, $query);
+    //       if (mysqli_num_rows($results) == 1) {
+    //         $_SESSION['username'] = $username;
+    //         $_SESSION['success'] = "You are now logged in";
+    //         header('location: index1.php');
+    //       }else {
+    //           array_push($errors, "Wrong username/password combination");
+    //       }
+    //   }
+    // }
 
 
-    ?>
+    ?> -->
 </body>
 </html>

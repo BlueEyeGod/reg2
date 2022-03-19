@@ -1,16 +1,11 @@
 <?php 
-  session_start(); 
-
-  if (!isset($_SESSION['username'])) {
-  	$_SESSION['msg'] = "You must log in first";
-  	header('location: index.php');
-  }
-  if (isset($_GET['logout'])) {
-  	session_destroy();
-  	unset($_SESSION['username']);
-  	header("location: index.php");
-  }
+    include('server.php');
+    if (!isLoggedIn()) {
+	$_SESSION['msg'] = "You must log in first";
+	header('location: login.php');
+}
 ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -26,10 +21,7 @@
 
     <title>Home</title>
 </head>
-
     <body>
-
-    
 
         <div class="content">
             <!-- notification message -->
@@ -47,10 +39,6 @@
             <!-- logged in user information -->
             <?php  if (isset($_SESSION['username'])) : ?>
             
-                
-
-                
-
             <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #13c480">
                 <div class="container-fluid">
                     <div class="navbar-header">
