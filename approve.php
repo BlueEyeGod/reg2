@@ -30,7 +30,7 @@
                 <?php
                 if(isset($_POST['logout'])){
                     session_destroy();
-                    header('location:home.php');
+                    header('location:index.php');
                 }
     
                 ?>
