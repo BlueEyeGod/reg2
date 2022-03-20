@@ -1,14 +1,14 @@
 <?php 
   session_start();
-  if (!isset($_SESSION['username'])) {
+  if (!isset($_SESSION['user'])) {
   	$_SESSION['msg'] = "You must log in first";
   	header('location: index.php');
   }
-  if (isset($_GET['logout'])) {
-  	session_destroy();
-  	unset($_SESSION['username']);
-  	header("location: index.php");
-  }
+//   if (isset($_GET['logout'])) {
+//   	session_destroy();
+//   	unset($_SESSION['username']);
+//   	header("location: index.php");
+//   }
 ?>
 
 <!doctype html>
@@ -42,7 +42,7 @@
         <?php endif ?>
 
         <!-- logged in user information -->
-        <?php  if (isset($_SESSION['username'])) : ?>
+        <?php  if (isset($_SESSION['user'])) : ?>
 
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color:
       #13c480">
@@ -83,7 +83,7 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                         <li class="nav-item">
-                            <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+                            <p>Welcome <strong><?php echo $_SESSION['user']['username']; ?></strong></p>
                         </li>
                         </li>
                         <li class="nav-item">
