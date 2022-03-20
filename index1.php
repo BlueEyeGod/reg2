@@ -37,7 +37,7 @@
             <?php endif ?>
 
             <!-- logged in user information -->
-            <?php  if (isset($_SESSION['username'])) : ?>
+            <?php  if (isset($_SESSION['user'])) : ?>
             
             <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #13c480">
                 <div class="container-fluid">
@@ -83,12 +83,12 @@
                         <ul class="navbar-nav">
                             <li class="nav-item">
                             <li class="nav-item">
-                                <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+                                <p>Welcome <strong><?php echo $_SESSION['user']['username']; ?></strong></p>
                             </li>
                             </li>
                             <li class="nav-item">
                             <li class="nav-item">
-                                <a href="index.php?logout='1'" class="btn btn-primary" role="button"
+                                <a href="logout.php" class="btn btn-primary" role="button"
                                     >Log Out</a>
                             </li>
                             </li>
