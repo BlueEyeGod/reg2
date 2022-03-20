@@ -1,28 +1,5 @@
 <?php 
-include('functions.php')
-// if(isset($_POST['login']))
-// {
-// $email=$_POST['email'];
-// $password=md5($_POST['password']);
-// $sql ="SELECT Password,Username FROM users WHERE Username=:username and Password=:password";
-// $query= $dbh -> prepare($sql);
-// $query-> bindParam(':username', $username, PDO::PARAM_STR);
-// $query-> bindParam(':password', $password, PDO::PARAM_STR);
-// $query-> execute();
-// $results=$query->fetchAll(PDO::FETCH_OBJ);
-// if($query->rowCount() > 0)
-// {
-// $_SESSION['login']=$_POST['email'];
-// $_SESSION['fullname']=$results->FullName;
-// $currentpage=$_SERVER['index1.php'];
-// echo "<script type='text/javascript'> document.location = '$currentpage'; </script>";
-// } else{
-  
-//   echo "<script>alert('Invalid Details');</script>";
-
-// }
-
-// }
+include('server.php')
 
 ?>
 
@@ -54,9 +31,9 @@ include('functions.php')
             <div class="mb-5" id="signup">
                 <h3 class="mb-3"> LOGIN</h3>
                 
-                <input type="text" placeholder="USERNAME" class="form-control mb-3" name="username" value="<?php echo $username; ?>">
+                <input type="text" placeholder="USERNAME" class="form-control mb-3" name="username">
                 
-                <input type="password" placeholder="PASSWORD" class="form-control mb-3" name="password" value="<?php echo $password; ?>">
+                <input type="password" placeholder="PASSWORD" class="form-control mb-3" name="password">
                 
   
                 <button type="submit" id="sub_btn" class="btn btn-primary" name="login_user">Login</button>

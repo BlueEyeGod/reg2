@@ -15,7 +15,7 @@
     <div class="mb-5">
         <h2 class="mb-3"> Your account is now pending for approval!!</h2>
         <h3 class="mb-3"> Contact admin below</h3>
-       <button type="button" id="sub_btn" class="btn btn-danger"><a href="getcoupon.php">Admins</a></button>
+       <button type="button" id="sub_btn" class="btn btn-danger"><a href="getcoupon1.php">Admins</a></button>
             
     </div>
     </div>

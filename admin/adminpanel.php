@@ -1,8 +1,6 @@
 <?php 
  include('../server.php');
 
- 
-
 if (!isAdmin()) {
 	$_SESSION['msg'] = "You must log in first";
 	header('location: ../login.php');
@@ -40,7 +38,7 @@ if (isset($_GET['logout'])) {
             <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #13c480">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="Index1.php"><img src="Cashclip1.png"></a>
+                        <a class="navbar-brand" href="../Index1.php"><img src="Cashclip1.png"></a>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -53,10 +51,10 @@ if (isset($_GET['logout'])) {
                                 <a class="nav-link" aria-current="page" href="adminpanel.php">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Userinfo.php">Users Info</a>
+                                <a class="nav-link" href="../Userinfo.php">Users Info</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="approve.php">Verify Users</a>
+                                <a class="nav-link" href="../approve.php">Verify Users</a>
                             </li>
                             
 
@@ -71,7 +69,7 @@ if (isset($_GET['logout'])) {
                             </li>
                             <li class="nav-item">
                             <li class="nav-item">
-                                <a href="index.php?logout='1'" class="btn btn-primary" role="button"
+                                <a href="../logout.php" class="btn btn-primary" role="button"
                                     style="color: white;">logout</a>
                             </li>
                             </li>
