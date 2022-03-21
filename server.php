@@ -26,6 +26,7 @@ $errors = array();
 
 // connect to the database
 $db = mysqli_connect('localhost', 'root', '', 'cyrilproject');
+$db = mysqli_connect('cashclip@localhost', 'cashclip_accounts', 'Michaelcashclip', 'cashclip_Registration');
  
 
 // call the register() function if register_btn is clicked
